@@ -3,11 +3,11 @@
 % If you want to visualize the data
 %   preview = true; 
 clear
-preview = false; 
+preview = true; 
 
 % change filename
-filename = 'optiTrack-example.csv';
-data = readtable(filename);
+filename = 'Take2023-10-18-test2.csv';
+data = readtable(filename,"NumHeaderLines",0);
 
 %% 读取和保存
 if data{1,2}==1.23
@@ -34,7 +34,7 @@ end
 
 if preview
     figure(1)
-    plot3(trace.x,trace.y,trace.z);
+    plot3(trace.x,trace.z,trace.y);
     axis equal
     
     figure(2)

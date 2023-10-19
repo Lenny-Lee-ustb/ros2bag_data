@@ -1,6 +1,6 @@
 %% 
 
-bag_name = 'test4';
+bag_name = '2023-10-18-test2';
 bag2mat(bag_name)
 
 load(strcat(bag_name,".mat"))
